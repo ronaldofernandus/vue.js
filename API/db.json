@@ -6,7 +6,7 @@
       "nama": "Ayam",
       "harga": "10000",
       "is_ready": true,
-      "gambar": "ayam.png"
+      "gambar": "ayam.jpg"
     }
   ],
   "products": [
@@ -14,10 +14,11 @@
       "id": 1,
       "kode": "K-01",
       "nama": "Ayam",
+      "harga": "10000",
       "is_ready": true,
-      "gambar": "ayam.png"
+      "gambar": "ayam.jpg"
     }
   ],
-  "keranjang": [],
-  "pesanan": []
+  "keranjangs": [],
+  "pesanans": []
 }
