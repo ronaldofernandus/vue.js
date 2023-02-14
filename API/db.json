@@ -1,9 +1,23 @@
 {
-    "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
-  }
+  "best-product": [
+    {
+      "id": 1,
+      "kode": "K-01",
+      "nama": "Ayam",
+      "harga": "10000",
+      "is_ready": true,
+      "gambar": "ayam.png"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "kode": "K-01",
+      "nama": "Ayam",
+      "is_ready": true,
+      "gambar": "ayam.png"
+    }
+  ],
+  "keranjang": [],
+  "pesanan": []
+}
