@@ -1,48 +1,68 @@
 <template>
- <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light ">
- <div class="container">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light">
+    <div class="container">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="">Kuliner</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <router-link class="nav-link" to="/">Home</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/foods">Food</router-link>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <router-link class="nav-link" to="/cart">
+                Keranjang
 
-   <div class="container-fluid">
-    <a class="navbar-brand" href="">Kuliner</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-       <router-link class="nav-link" to="/">Home</router-link>
-        </li>
-        <li class="nav-item">
-         <router-link class="nav-link" to="/foods">Food</router-link>
-        </li>
-      
-       
-      </ul>
-      <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-       <router-link class="nav-link" to="/cart">       
-       Keranjang
-
-        <b-icon-bag/>
-        <span class="badge badge-success ml-2">0</span>
-       </router-link>
-        </li>
-       
-       
-      </ul>
-     
+                <b-icon-bag />
+                <span class="badge badge-success ml-2">{{
+                  jumlah_pesanan.length
+                }}</span>
+              </router-link>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
- </div>
-</nav>
+  </nav>
 </template>
 
 <script>
+import axios from "axios";
 export default {
-name:'Navbar-vue',
-}
+  name: "Navbar-vue",
+  data() {
+    return {
+      jumlah_pesanan: [],
+    };
+  },
+
+  methods: {
+    setJumlah(data) {
+      this.jumlah_pesanan = data;
+    },
+  },
+  mounted() {
+    axios
+      .get("http://localhost:3000/keranjangs")
+      .then((response) => this.setJumlah(response.data))
+      .catch((error) => console.log(error));
+  },
+};
 </script>
 
-<style>
-
-</style>
+<style></style>
