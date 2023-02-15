@@ -76,8 +76,8 @@ export default {
   },
   data() {
     return {
-      product: [],
-      pesan: [],
+      product: {},
+      pesan: {},
     };
   },
 
@@ -87,9 +87,9 @@ export default {
     },
 
     pemesanan() {
-      this.pesan = this.product;
+      this.pesan.products = this.product;
       axios
-        .post("http://localhost:3000/keranjangs" , this.pesan)
+        .post("http://localhost:3000/keranjangs", this.pesan)
         .then(() => {
           console.log("Berhasil");
         })
