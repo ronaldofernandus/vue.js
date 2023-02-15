@@ -24,7 +24,7 @@
       "nama": "Sate",
       "harga": "10000",
       "is_ready": true,
-      "gambar": ".jpg"
+      "gambar": "sate.jpg"
     },
     {
       "id": 3,

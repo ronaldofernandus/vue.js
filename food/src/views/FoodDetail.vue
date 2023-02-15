@@ -87,9 +87,9 @@ export default {
     },
 
     pemesanan() {
-      this.pesan.products = this.product;
+      this.pesan = this.product;
       axios
-        .get("http://localhost:3000/keranjangs" + this.pesan)
+        .post("http://localhost:3000/keranjangs" , this.pesan)
         .then(() => {
           console.log("Berhasil");
         })
