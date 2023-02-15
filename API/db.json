@@ -17,6 +17,22 @@
       "harga": "10000",
       "is_ready": true,
       "gambar": "ayam.jpg"
+    },
+    {
+      "id": 2,
+      "kode": "K-02",
+      "nama": "Sate",
+      "harga": "10000",
+      "is_ready": true,
+      "gambar": "ayam.jpg"
+    },
+    {
+      "id": 3,
+      "kode": "K-03",
+      "nama": "Nasi",
+      "harga": "10000",
+      "is_ready": true,
+      "gambar": "ayam.jpg"
     }
   ],
   "keranjangs": [],

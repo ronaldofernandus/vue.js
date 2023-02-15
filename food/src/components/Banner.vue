@@ -8,15 +8,15 @@
             <div class="justify-content-center align-self-center">
               <h2><strong>Food Menu</strong><br />in Your Gadget</h2>
               <p>silahkan pilih makanan anda</p>
-              <button class="btn btn-lg btn-success">
+              <router-link class="btn btn-lg btn-success" to="/foods">
                 <b-icon-arrow-right />Pesan Sekarang
-              </button>
+              </router-link>
             </div>
           </div>
         </div>
 
         <div class="col-md-6">
-          <img src="../assets/images/1.png" width="50%" />
+          <img src="../assets/images/1.png" width="100%" />
         </div>
       </div>
     </div>
@@ -32,9 +32,9 @@
             <div class="justify-content-center align-self-center">
               <h2><strong>Food Menu</strong><br />in Your Gadget</h2>
               <p>silahkan pilih makanan anda</p>
-              <button class="btn btn-lg btn-success">
+             <router-link class="btn btn-lg btn-success" to="/foods">
                 <b-icon-arrow-right />Pesan Sekarang
-              </button>
+              </router-link>
             </div>
           </div>
         </div>

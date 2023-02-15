@@ -4,17 +4,17 @@
     <div class="container">
       <Banner />
       <div class="row mt-4">
-        <div class="col">
+        <div class="col-6">
           <h2>Best <strong>Food</strong></h2>
         </div>
-        <div class="col">
+        <div class="col-6">
           <router-link to="/foods" class="btn btn-success float-right">
             Lihat Semua
             <b-icon-eye />
           </router-link>
         </div>
         <div class="container">
-          <div class="row mb-4 ">
+          <div class="row mb-4">
             <div
               class="col-md-4 mt-4"
               v-for="product in products"
