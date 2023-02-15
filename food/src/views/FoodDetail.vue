@@ -91,7 +91,12 @@ export default {
       axios
         .post("http://localhost:3000/keranjangs", this.pesan)
         .then(() => {
-          console.log("Berhasil");
+          this.$toast.success("Berhasil Masuk Ke Keranjang", {
+            type: "success",
+            position: "top-right",
+            duration: 3000,
+            dismissible: true,
+          });
         })
         .catch((error) => console.log(error));
     },

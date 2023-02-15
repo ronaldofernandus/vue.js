@@ -36,19 +36,9 @@
     }
   ],
   "keranjangs": [
-    [],
-    [],
-    {
-      "id": 2,
-      "kode": "K-02",
-      "nama": "Sate",
-      "harga": "10000",
-      "is_ready": true,
-      "gambar": "sate.jpg"
-    },
     {
       "jumlah_pesanan": "5",
-      "keterangan": "aaa",
+      "keterangan": "cabe",
       "products": {
         "id": 2,
         "kode": "K-02",
@@ -57,11 +47,11 @@
         "is_ready": true,
         "gambar": "sate.jpg"
       },
-      "id": 3
+      "id": 1
     },
     {
       "jumlah_pesanan": "5",
-      "keterangan": "aaa",
+      "keterangan": "cabe",
       "products": {
         "id": 2,
         "kode": "K-02",
@@ -70,7 +60,7 @@
         "is_ready": true,
         "gambar": "sate.jpg"
       },
-      "id": 4
+      "id": 2
     }
   ],
   "pesanans": []
