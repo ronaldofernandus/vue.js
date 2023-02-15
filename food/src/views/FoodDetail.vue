@@ -87,18 +87,27 @@ export default {
     },
 
     pemesanan() {
-      this.pesan.products = this.product;
-      axios
-        .post("http://localhost:3000/keranjangs", this.pesan)
-        .then(() => {
-          this.$toast.success("Berhasil Masuk Ke Keranjang", {
-            type: "success",
-            position: "top-right",
-            duration: 3000,
-            dismissible: true,
-          });
-        })
-        .catch((error) => console.log(error));
+      if (this.pesan.jumlah_pesanan) {
+        this.pesan.products = this.product;
+        axios
+          .post("http://localhost:3000/keranjangs", this.pesan)
+          .then(() => {
+            this.$toast.success("Berhasil Masuk Ke Keranjang", {
+              type: "success",
+              position: "top-right",
+              duration: 3000,
+              dismissible: true,
+            });
+          })
+          .catch((error) => console.log(error));
+      } else {
+        this.$toast.error("Isi dulu", {
+          type: "error",
+          position: "top-right",
+          duration: 3000,
+          dismissible: true,
+        });
+      }
     },
   },
 
