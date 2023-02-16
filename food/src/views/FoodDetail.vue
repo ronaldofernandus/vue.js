@@ -2,7 +2,7 @@
   <div class="food-detail">
     <Navbar />
     <div class="container">
-      <div class="row mt-5">
+      <div class="row mt-4">
         <div class="col">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -92,7 +92,10 @@ export default {
         axios
           .post("http://localhost:3000/keranjangs", this.pesan)
           .then(() => {
-            this.$router.push({ path: "/cart" });
+            // this.$router.push({ path: "/cart" });
+            this.$router.push({ path: "/cart" }).catch((error) => {
+              console.log(error);
+            });
             this.$toast.success("Berhasil Masuk Ke Keranjang", {
               type: "success",
               position: "top-right",
