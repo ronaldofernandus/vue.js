@@ -4,6 +4,8 @@ import HomeView from "../views/HomeView.vue";
 import Foods from "../views/Foods.vue";
 import FoodDetail from "../views/FoodDetail.vue";
 import Keranjang from "../views/Keranjang.vue";
+
+import Result from "../views/Result.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -26,6 +28,12 @@ const routes = [
     path: "/cart",
     name: "Cart",
     component: Keranjang,
+  },
+
+  {
+    path: "/result",
+    name: "Results-cart",
+    component: Result,
   },
   {
     path: "/about",
