@@ -154,6 +154,72 @@
         }
       ],
       "id": 2
+    },
+    {
+      "nama": "aaa",
+      "alamat": "aaa",
+      "keranjangs": [
+        {
+          "jumlah_pesanan": "2",
+          "keterangan": "aa",
+          "products": {
+            "id": 1,
+            "kode": "K-01",
+            "nama": "Ayam",
+            "harga": "10000",
+            "is_ready": true,
+            "gambar": "ayam.jpg"
+          },
+          "id": 1
+        },
+        {
+          "jumlah_pesanan": "2",
+          "keterangan": "aa",
+          "products": {
+            "id": 1,
+            "kode": "K-01",
+            "nama": "Ayam",
+            "harga": "10000",
+            "is_ready": true,
+            "gambar": "ayam.jpg"
+          },
+          "id": 2
+        }
+      ],
+      "id": 3
+    },
+    {
+      "nama": "aldo",
+      "alamat": "bbb",
+      "keranjangs": [
+        {
+          "jumlah_pesanan": "2",
+          "keterangan": "aaa",
+          "products": {
+            "id": 1,
+            "kode": "K-01",
+            "nama": "Ayam",
+            "harga": "10000",
+            "is_ready": true,
+            "gambar": "ayam.jpg"
+          },
+          "id": 1
+        },
+        {
+          "jumlah_pesanan": "2",
+          "keterangan": "aaa",
+          "products": {
+            "id": 1,
+            "kode": "K-01",
+            "nama": "Ayam",
+            "harga": "10000",
+            "is_ready": true,
+            "gambar": "ayam.jpg"
+          },
+          "id": 2
+        }
+      ],
+      "id": 4
     }
   ]
 }
